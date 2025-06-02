@@ -1,0 +1,39 @@
+.progress-circle {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+.css-circle {
+  border-radius: 50%;
+  background: conic-gradient($progress-done 75%, $progress-bg 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.css-circle span {
+  font-family: 'PantonExtraBold', sans-serif;
+  font-size: 30px;
+  color: $text-dark;
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-circle:hover {
+  background: conic-gradient($hover-green 75%, $progress-bg 0);
+  box-shadow: 0 0 0 5px rgba($hover-green, 0.2);
+}
+
+.js-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}

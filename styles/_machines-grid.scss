@@ -1,0 +1,49 @@
+.machines-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.machine-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.machine-card__info {
+  display: flex; justify-content: space-between;
+}
+
+.date, .machine-name, .operator {
+  margin: 12px 0;
+}
+
+.date {
+  color: $text-dark;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.machine-name {
+  max-width: 100px;
+  text-align: right;
+  color: $text-dark;
+}
+
+.operator {
+  color: $primary-blue;
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 86px;
+  height: 50px;
+}
+
+.title {
+  width: 300px;
+  font-family: 'PantonExtraBold', sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  color: $primary-blue;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.legend {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+.legend__item {
+  &--ready {
+    color: $progress-done;
+  }
+  &--not-ready {
+    color: $progress-bg;
+  }
+}
